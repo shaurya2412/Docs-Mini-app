@@ -1,7 +1,6 @@
 
 import Background from "./Components/Background"
 import Foreground from "./Components/Foreground"
-import Card from "./Components/Card"
 function App() {
  return(
   <div>
