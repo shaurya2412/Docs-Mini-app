@@ -1,11 +1,12 @@
 import { IoIosCloseCircle } from "react-icons/io";
 import { FaFileArchive } from "react-icons/fa";
 import { TbDownload } from "react-icons/tb";
+import {motion} from "framer-motion";
 
 
-const Card = ({data}) => {
+const Card = ({data, reference}) => {
   return (
-    <div className='w-60 h-[300px] rounded-[60px] bg-zinc-900 mt-20 ml-20 ' >
+    <motion.div drag dragConstraints={reference} className='w-60 h-[300px] rounded-[60px] bg-zinc-900 mt-20 ml-20 ' >
          <div className=" ml-10 pt-14 text-white text flex justify-between place-content-center">
           <FaFileArchive size={20} /></div> 
           <div className='text-white px-8 font-semibold pt-4'>{data.desc}</div>
@@ -30,7 +31,7 @@ const Card = ({data}) => {
 </button>
     </div>
                  */}
-</div>
+</motion.div>
   )
 }
 
