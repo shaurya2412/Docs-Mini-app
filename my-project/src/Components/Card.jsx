@@ -20,17 +20,12 @@ const Card = ({data, reference}) => {
 
 {
   data.tag.isOpen ?   (<button className="bg-green-500 text-white font-semibold  px-20 mt-6 rounded-b-full hover:bg-green-400">
-  Download Now
+  {data.tag.tagTitle}
 </button>
-    ) : <button className="bg-blue-500 text-white font-semibold  px-20 mt-6 rounded-b-full hover:bg-green-400">
-    Download Now
+    ) : <button className="bg-blue-500 text-white font-semibold  px-20 mt-6 rounded-b-full hover:bg-blue-500">
+    {data.tag.tagTitle}
   </button>
 }
-          {/* </div><button className="bg-green-500 text-white font-semibold  px-20 mt-6 rounded-b-full hover:bg-green-400">
-  Download Now
-</button>
-    </div>
-                 */}
 </motion.div>
   )
 }
